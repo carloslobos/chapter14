@@ -1,21 +1,14 @@
 var elem = document.querySelector('.main-carousel');
-var flkty = new Flickity(elem, {
-    // options
-    cellAlign: 'left',
-    contain: true,
-    pageDots: false
-});
 
-// element argument can be a selector string
-//   for an individual element
+
+//10
+
 var flkty = new Flickity('.main-carousel', {
-    // options
+    hash: true,
+    pageDots: false,
 });
 
-// 10
-var flkty = new Flickity('.carousel', {
-    hash: true,
-});
+
 
 // 11
 var buttonReset = document.querySelector('.button-reset');
@@ -23,8 +16,7 @@ var firstSlide = document.querySelector('#carousel-cell1');
 
 buttonReset.addEventListener('click', function(event) {
 
-    //var index = buttonReset.indexOf(event.target);
-    flkty.select(firstSlide);
+    flkty.select(0);
 });
 
 //12
