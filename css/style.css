@@ -4,6 +4,8 @@
 
 img { width: 100%; height: auto; }
 
-.flickity-page-dots { display: none; }
-
 .progress-bar { height: 20px; width: 0; background: #333; }
+
+.button-reset { height: 40px; width: 40px; fill: red; }
+
+.button-reset img { color: red; margin: auto; }
