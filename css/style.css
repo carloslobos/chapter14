@@ -6,6 +6,4 @@ img { width: 100%; height: auto; }
 
 .progress-bar { height: 20px; width: 0; background: #333; }
 
-.button-reset { height: 40px; width: 40px; fill: red; }
-
-.button-reset img { color: red; margin: auto; }
+.button-reset { height: 40px; width: 40px; position: absolute; top: 70px; left: 30px; }

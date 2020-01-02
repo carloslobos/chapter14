@@ -25,9 +25,7 @@ img {
 .button-reset {
     height: 40px;
     width: 40px;
-    fill: red;
-    img {
-        color: red;
-        margin: auto;
-    }
+    position: absolute;
+    top: 70px;
+    left: 30px;
 }
