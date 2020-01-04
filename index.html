@@ -36,6 +36,32 @@
             <div class="container" style="background-size: cover;"><img src="images/Rzym.jpg" alt="Rzym"></div>
         </div>
     </div>
+    <script id="template-slides" type="x-tmpl-mustache">
+        <h1>{{title}}</h1><br>{{{description}}}
+    </script>
+    <script>
+        var slides = [{
+            image: '<img src="images/LA.jpg" alt="Los Angeles">',
+            title: 'Los Angeles'
+            description: '<p>Lorem ipsum.</p> <img src="images/LA.jpg" alt="Los Angeles"> <p>Dolor sit.</p>'
+        }, {
+            image: '<img src="images/Dubaj.jpg" alt="Dubaj">',
+            title: 'Dubaj'
+            description: '<p>Lorem ipsum.</p> <img src="images/Dubaj.jpg" alt="Dubaj"> <p>Dolor sit.</p>'
+        }, {
+            image: '<img src="images/Kuba.jpg" alt="Kuba">',
+            title: 'Kuba'
+            description: '<p>Lorem ipsum.</p> <img src="images/Kuba.jpg" alt="Kuba"> <p>Dolor sit.</p>'
+        }, {
+            image: '<img src="images/Malediwy.jpg" alt="Malediwy">',
+            title: 'Malediwy'
+            description: '<p>Lorem ipsum.</p> <img src="images/Malediwy.jpg" alt="Malediwy"> <p>Dolor sit.</p>'
+        }, {
+            image: '<img src="images/Rzym.jpg" alt="Rzym">',
+            title: 'Rzym'
+            description: '<p>Lorem ipsum.</p> <img src="images/Rzym.jpg" alt="Rzym"> <p>Dolor sit.</p>'
+        }, ]
+    </script>
 
 
     <div class="progress-bar"></div>
@@ -45,6 +71,7 @@
 
     <script src="vendor/flickity.pkgd.min.js"></script>
     <script src="vendor/hash.js"></script>
+    <script src="js/mustache.js"></script>
     <script src="js/script.js"></script>
 
 </body>
