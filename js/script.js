@@ -1,5 +1,21 @@
 var elem = document.querySelector('.main-carousel');
 
+// Loop for creating slides
+
+var containerSlide = document.getElementsById('container');
+var templateSlides = document.getElementById('template-slides');
+
+Mustache.parse(templateSlides);
+
+var slideCode = ''
+
+for (var i = 0; i < slides.length; i++) {
+    console.log(slides);
+    slideCode += Mustache.render(templateSlides, slides[i]);
+}
+
+containerSlide.insertAdjacentHTML('beforeend', slideCode);
+
 
 //10
 
