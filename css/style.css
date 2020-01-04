@@ -7,3 +7,5 @@ img { width: 100%; height: auto; }
 .progress-bar { height: 20px; width: 0; background: #333; }
 
 .button-reset { height: 40px; width: 40px; position: absolute; top: 70px; left: 30px; }
+
+#map { height: 400px; width: 100%; }

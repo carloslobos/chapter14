@@ -20,44 +20,29 @@
 
     </p>
     <div class="main-carousel">
-        <div class="carousel-cell" id="carousel-cell1">
-            <div class="container" style="background-size: cover;"></div>
-        </div>
-        <div class="carousel-cell" id="carousel-cell2">
-            <div class="container" style="background-size: cover;"></div>
-        </div>
-        <div class="carousel-cell" id="carousel-cell3">
-            <div class="container" style="background-size: cover;"></div>
-        </div>
-        <div class="carousel-cell" id="carousel-cell4">
-            <div class="container" style="background-size: cover;"></div>
-        </div>
-        <div class="carousel-cell" id="carousel-cell5">
-            <div class="container" style="background-size: cover;"></div>
-        </div>
+
+
     </div>
     <script id="template-slides" type="x-tmpl-mustache">
-        <h1>{{title}}</h1><br>{{{description}}}
+        <div class="carousel-cell">
+            <div class="container">
+                <h1>{{title}}</h1><br>{{{description}}}</div>
+        </div>
     </script>
     <script>
         var slides = [{
-            image: '<img src="images/LA.jpg" alt="Los Angeles">',
             title: 'Los Angeles',
             description: '<p>Lorem ipsum.</p> <img src="images/LA.jpg" alt="Los Angeles"> <p>Dolor sit.</p>'
         }, {
-            image: '<img src="images/Dubaj.jpg" alt="Dubaj">',
             title: 'Dubaj',
             description: '<p>Lorem ipsum.</p> <img src="images/Dubaj.jpg" alt="Dubaj"> <p>Dolor sit.</p>'
         }, {
-            image: '<img src="images/Kuba.jpg" alt="Kuba">',
             title: 'Kuba',
             description: '<p>Lorem ipsum.</p> <img src="images/Kuba.jpg" alt="Kuba"> <p>Dolor sit.</p>'
         }, {
-            image: '<img src="images/Malediwy.jpg" alt="Malediwy">',
             title: 'Malediwy',
             description: '<p>Lorem ipsum.</p> <img src="images/Malediwy.jpg" alt="Malediwy"> <p>Dolor sit.</p>'
         }, {
-            image: '<img src="images/Rzym.jpg" alt="Rzym">',
             title: 'Rzym',
             description: '<p>Lorem ipsum.</p> <img src="images/Rzym.jpg" alt="Rzym"> <p>Dolor sit.</p>'
         }, ]
@@ -68,11 +53,15 @@
 
     <button class="button-reset"><img src="images/reset.png" alt="reset"></button>
 
+    <h3>My Google Maps Demo</h3>
+    <div id="map"></div>
 
     <script src="vendor/flickity.pkgd.min.js"></script>
     <script src="vendor/hash.js"></script>
     <script src="js/mustache.js"></script>
     <script src="js/script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDR9ZdNSanisC-VHeUIMP7w3VxqtSxW5qA&callback=initMap"></script>
+
 
 </body>
 
