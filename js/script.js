@@ -46,11 +46,11 @@ flkty.on('scroll', function(progress) {
 // Init Google Maps
 
 initMap = function() {
-    var losAngelesLoc = { lat: 34.054302, lng: -118.246977 };
+    //var losAngelesLoc = { lat: 34.054302, lng: -118.246977 };
 
 
     var map = new google.maps.Map(
-        document.getElementById('map'), { zoom: 6, center: losAngelesLoc });
+        document.getElementById('map'), { zoom: 6, center: slides[0].cords });
 
     for (var i = 0; i < slides.length; i++) {
         var element = slides[i];
@@ -62,7 +62,7 @@ initMap = function() {
         });
 
         flkty.on('change', function(i) {
-            map = { zoom: 6, center: element.cords }
+            map = { zoom: 6, center: slides[i].cords }
         });
     }
 };
