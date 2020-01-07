@@ -52,7 +52,7 @@ initMap = function() {
     var map = new google.maps.Map(
         document.getElementById('map'), { zoom: 6, center: slides[0].cords });
 
-    for (var i = 0; i < slides.length; i++) {
+    slides.forEach(function(element, i) {
         var element = slides[i];
 
         var marker = new google.maps.Marker({ position: element.cords, map: map });
@@ -61,8 +61,9 @@ initMap = function() {
             flkty.select(i);
         });
 
-        flkty.on('change', function(i) {
-            map = { zoom: 6, center: slides[i].cords }
-        });
-    }
+
+    });
+    flkty.on('change', function(i) {
+            var map = { zoom: 6, center: slides[0].cords });
+    })
 };
