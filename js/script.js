@@ -64,7 +64,6 @@ initMap = function() {
 
     });
     flkty.on('change', function(i) {
-        var map = new google.maps.Map(
-            document.getElementById('map'), { zoom: 6, center: slides[0].cords });
+        map.panTo(slides[i].cords);
     })
 };
